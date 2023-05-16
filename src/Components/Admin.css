@@ -1,0 +1,15 @@
+.main_container{
+
+    display: flex;
+   
+}
+
+.Display_container{
+
+    display: flex;
+    width: 100%;
+
+    /* background-color: rgb(213, 183, 241); */
+    justify-content: center;
+    align-items: center;
+}

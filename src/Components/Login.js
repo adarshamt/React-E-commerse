@@ -1,22 +1,46 @@
-import React from 'react'
+import React, { useContext, useRef } from 'react'
 
 import './Login.css'
 import { AiFillHome } from 'react-icons/ai'
 
 
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { Context } from './Context'
 
 
 export const Login = () => {
-  const link=useNavigate()
+
+  const ipref = useRef(null)
+  const link = useNavigate()
+
+  const {signup,setAuth} =useContext(Context)
+  
+
+   const logvalidation = () =>{
+  const email = ipref.current.email.value
+  const password = ipref.current.password.value
+
+  const validation = signup.filter((item)=> item.email === email && item.password === password )
+
+  if (validation.length > 0){
+    alert('Login successfully')
+    setAuth(true)
+    link('/')
+
+  }
+  else{
+
+    alert('Wrong user details')
+  }
+
+}
   
   return (
     <div className='main_div'>
 
-      <div className='navbar'>
+      <div className='nav_log'>
 
             <AiFillHome onClick={()=>link('/')}  />
-
 
 
       </div>
@@ -25,39 +49,33 @@ export const Login = () => {
 
      
 
-    <form  className='registration_form'>
+    <form ref={ipref} onSubmit={(e)=>{e.preventDefault()}} className='registration_form'>
 
-         {/* <label>Name </label>
-
-            <input   type='text' placeholder='name'/> */}
+        
 
 
-            <label>Email </label>
+          <label>Email </label>
+          <input   type='email' placeholder='Email' name='email' />
 
-           {/* <input   type='Email' placeholder='Email'/>
+             <label>Password </label>
+            <input   type='text' placeholder='Password' name='password'/> 
 
-           <label>Phone Number </label> */}
-
-          <input   type='number' placeholder='Phone Number'/>
-
-
-         <label>Password </label>
-
-       <input   type='text' placeholder='Password'/>
-
+                <button onClick={logvalidation} className='login'>Log in</button>
+               <label>Don't have account</label><Link to='/signup'> Register here</Link>
      </form>
 
     </div>
 
-    <div className='btn'>
+    <div className='btns'>
 
-      <button className='signup'>Sign up</button>
+      {/* <button className='signup'>Sign up</button> */}
 
-      <button onClick={()=>link("/")} className='login'>Log in</button>
+     
 
+     
 
     </div>
-
+   
 
 
 </div>

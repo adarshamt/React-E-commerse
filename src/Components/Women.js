@@ -15,7 +15,7 @@ const Women = () => {
 
   return (
 
-    <div className='d-flex-column container'>
+    <div className='d-flex-column container' style={{marginTop:'2%'}}>
        
       <div className='row gap-5 '>                 
 

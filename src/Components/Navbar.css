@@ -1,0 +1,77 @@
+
+
+.top-Notification{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color:#e4e6e7;
+
+    height: 20px;
+    background-color: #abb8c3;
+}
+.nav_main_cont{
+    height: 50px;
+    background-color: white;
+}
+.Company_name{
+    width: 100px;
+    height: 21px;
+    
+
+}
+.Company_name img {
+    height: 24px;
+}
+               
+.contents{
+    display: flex;
+   
+   
+    font-size: 18px;
+   
+    
+    
+    align-items: center;
+    
+}
+.catagory{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.Company_name{
+    width: 20%;
+}
+.Company_name{
+    height: 42px;
+}
+/* 
+.left_catogry {
+    
+    align-items: center;
+  
+    margin: 20px;
+}
+.left_catogry a{
+    margin: 20%;
+}
+.Right_conents {
+    padding-right: 50px;
+
+    
+} */
+.rigth_content_icons i{
+
+    margin: 20px;
+    
+
+
+}
+
+.contents{
+    height: 50px;
+}
