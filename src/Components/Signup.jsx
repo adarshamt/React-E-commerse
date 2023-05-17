@@ -26,11 +26,7 @@ import { Context } from './Context'
   Navigate('/login')
 
   }
-
-
-
-  
-  return (
+ return (
     <div className='main_div'>
 
       <div className='form-div'>

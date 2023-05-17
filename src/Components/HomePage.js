@@ -84,7 +84,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100  "
-src='https://admin.mochishoes.com/banner/1683542270DESKTOP-BANNER_WOMEN_MOCHI_MAY.jpg'          alt="No image found"
+src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Banner_1.jpg?v=1682431007'          alt="No image found"
         />
         <Carousel.Caption>
           {/* <h3>First slide label</h3>
@@ -94,7 +94,7 @@ src='https://admin.mochishoes.com/banner/1683542270DESKTOP-BANNER_WOMEN_MOCHI_MA
       <Carousel.Item>
         <img
           className="d-block w-100"
-src='https://admin.mochishoes.com/banner/1683542155DESKTOP-BANNER_MEN_MOCHI_MAY.jpg'          alt="No image found"
+src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591'          alt="No image found"
         />
 
         <Carousel.Caption>
@@ -105,7 +105,7 @@ src='https://admin.mochishoes.com/banner/1683542155DESKTOP-BANNER_MEN_MOCHI_MAY.
       <Carousel.Item>
         <img
           className="d-block w-100"
-src='https://admin.mochishoes.com/banner/1683542155DESKTOP-BANNER_MEN_MOCHI_MAY.jpg' 
+src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591' 
          alt="No image found"
         />
 
