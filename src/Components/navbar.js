@@ -25,20 +25,19 @@ const Navbars= () => {
     const logCheck= ()=>{
       
 
-      // link('/cart')
+      
       if(auth == true){
       
 
         link('/cart')
-      }
-
-      else{
+      }else{
 
         alert(' Please Login')
         link('/login')
       }
     }
 
+    
     const searchHandle = (e) => {
     
       setSearch(e.target.value);

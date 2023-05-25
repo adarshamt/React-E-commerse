@@ -15,6 +15,8 @@ const Cart = () => {
 
   const {cart,setCart} = useContext(Context)
 
+  let cartTotal = 0;
+
 
 
 
@@ -62,6 +64,9 @@ const removeQty = (id)=>{
 
     {cart.map((item)=>(
       <>
+
+         <p style={{display:'none'}}>{cartTotal += item.qty * item.price}</p>
+
         <div className='item' key={item.id} >
 
            <div className='image_container'>
@@ -86,19 +91,18 @@ const removeQty = (id)=>{
              <TiDeleteOutline style={{fontSize:'29px'}} id={item.id} onClick={removeitem} />
                 
 
-           
-             
-
         </div>
 
-             </>
+     </>
 
                ))}
-               {/* <div className='total'><h3>Cart Total :</h3></div> */}
-
+           
     </div>  
 
+    
     }
+          <div className='total'><h3>Cart Total :{cartTotal}</h3></div>
+      
     </div>
   )
 }

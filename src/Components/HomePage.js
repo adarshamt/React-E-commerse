@@ -84,7 +84,8 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100  "
-src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Banner_1.jpg?v=1682431007'          alt="No image found"
+          src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Banner_1.jpg?v=1682431007'        
+          alt="No image found"
         />
         <Carousel.Caption>
           {/* <h3>First slide label</h3>
@@ -94,7 +95,8 @@ src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Banner_1.jpg?v=16824
       <Carousel.Item>
         <img
           className="d-block w-100"
-src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591'          alt="No image found"
+          src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591'          
+          alt="No image found"
         />
 
         <Carousel.Caption>
@@ -102,11 +104,11 @@ src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banner
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <img
-          className="d-block w-100"
-src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591' 
-         alt="No image found"
+          className="d-block w-100 "
+          src='https://cdn.shopify.com/s/files/1/0607/6678/1671/collections/bg_slideshow_h1_1_1512x.jpg?v=1678787635' 
+          alt="No image found"
         />
 
         <Carousel.Caption>
@@ -114,8 +116,8 @@ src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banner
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
+        {/* </Carousel.Caption> */}
+      {/* </Carousel.Item>  */}
     </Carousel>
 {/* *******************Casrole End************* */}
 

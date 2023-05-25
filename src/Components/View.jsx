@@ -96,14 +96,15 @@ const View = () => {
       // Navigate('./cart')
          }
 
-      }
-      else{
+    }
+    else{
 
         alert('Please login')
       Navigate('/login')
     
       }
   }
+
 
   return (
 

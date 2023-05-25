@@ -20,10 +20,11 @@
 }
 
 .card_main.card{
-    box-shadow: 0 0 15px black;
+    /* box-shadow: 0 0 15px black; */
     margin: 2%;
+    /* padding: 5%; */
     text-align: center;
-
+  
 }
 /* .hame_content{
 
@@ -74,16 +75,8 @@
     padding-left: 100px;
     text-align: start;
 } 
-.first_row{
-    padding: 50px;
-    
-    
-   
-    /* background-color: rgb(0, 255, 76); */
-    
-    
-    
-}
+
+
 .card_body{
     padding: 5px;
 }
@@ -97,7 +90,7 @@
 } */
 .sec_row{
 
-    padding: 50px;
+    /* padding: 50px; */
 }
 /* .firstrow div
 {
@@ -133,7 +126,7 @@
 }
 
 .card{
-    padding: 5px;
+    padding: 50px;
 }
 .card .card-body{
     border: 0px;
