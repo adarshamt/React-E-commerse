@@ -18,6 +18,9 @@
  
     
 }
+.card_main:hover{
+    box-shadow: 0 0  20px black;
+}
 
 .card_main.card{
     /* box-shadow: 0 0 15px black; */

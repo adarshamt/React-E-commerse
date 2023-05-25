@@ -84,7 +84,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100  "
-          src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Banner_1.jpg?v=1682431007'        
+          src='https://previews.123rf.com/images/leoedition/leoedition1905/leoedition190500762/123140440-set-of-banners-shoes-shop-new-collection-vector-illustration.jpg'        
           alt="No image found"
         />
         <Carousel.Caption>
@@ -95,7 +95,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src='https://cdn.shopify.com/s/files/1/0533/3391/7885/files/Category-page-banners-Women-2_67a73b43-3fbc-4c2c-9d53-addd9a5c77a9_1464x.jpg?v=1632808591'          
+          src='https://www.goldstarshoes.com/MediaThumb/medium/Media/Goldstar/Banners/goldstar-web-banners-4614_1440-pxl-3.jpg'          
           alt="No image found"
         />
 
@@ -104,22 +104,22 @@ const HomePage = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
-      {/* <Carousel.Item>
+      <Carousel.Item>
         <img
           className="d-block w-100 "
-          src='https://cdn.shopify.com/s/files/1/0607/6678/1671/collections/bg_slideshow_h1_1_1512x.jpg?v=1678787635' 
+          src='https://cdn.shopify.com/s/files/1/0567/9503/7849/files/website-banner-desktop-landscape.jpg?v=1635135138' 
           alt="No image found"
         />
 
-        <Carousel.Caption>
-          {/* <h3>Third slide label</h3>
+        {/* <Carousel.Caption>
+           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        {/* </Carousel.Caption> */}
-      {/* </Carousel.Item>  */}
+          </p>
+        </Carousel.Caption> */}
+      </Carousel.Item>
     </Carousel>
-{/* *******************Casrole End************* */}
+ {/* *******************Casrole End*************  */}
 
              {/* <div className='hame_content'> */}
 
@@ -179,7 +179,7 @@ const HomePage = () => {
           <div className='first_row'>
 
             {/* ***********products******************** */}
-        <><h3 style={{margin:'30px'}}>Products</h3></>
+        <><h3 style={{margin:'30px',textAlign:'center'}}>𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨</h3></>
         
         <CardGroup>
       <Card className='card_main' onClick={()=>link(`/men`)}>
@@ -280,7 +280,7 @@ const HomePage = () => {
 
     </div>
 
-   
+  
   
 
   
