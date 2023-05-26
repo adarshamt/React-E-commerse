@@ -84,7 +84,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100  "
-          src='https://previews.123rf.com/images/leoedition/leoedition1905/leoedition190500762/123140440-set-of-banners-shoes-shop-new-collection-vector-illustration.jpg'        
+          src='https://cdn.shopify.com/s/files/1/0567/9503/7849/files/website-banner-desktop-landscape.jpg?v=1635135138'        
           alt="No image found"
         />
         <Carousel.Caption>
@@ -95,7 +95,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src='https://www.goldstarshoes.com/MediaThumb/medium/Media/Goldstar/Banners/goldstar-web-banners-4614_1440-pxl-3.jpg'          
+          src='https://cdn.shopify.com/s/files/1/0567/9503/7849/files/website-banner-desktop-landscape.jpg?v=1635135138'          
           alt="No image found"
         />
 

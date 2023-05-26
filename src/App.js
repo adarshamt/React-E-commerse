@@ -16,7 +16,7 @@ import Cart from './Components/Cart';
 
 
 import Navbars from './Components/navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ProductsData } from './Components/Products/ProductData';
 import Collection from './Components/Products/Collection';
 
@@ -31,6 +31,8 @@ import AdminProducts from './Components/AdminProducts';
 import Search from './Components/Search';
 import AdminUserDetails from './Components/AdminUserDetails';
 import AdminEditProducts from './Components/AdminEditProducts';
+// import PreLoader from './Components/preLoader';
+
 
 
 
@@ -63,16 +65,23 @@ function App() {
     setSearch
   }
 
+
+ 
+
+
   return (
     <div>
+
+      {/* <PreLoader/> */}
 
       <Context.Provider value={data}>
 
         <Navbars />
 
+      
 
-
-        <Routes>
+    :
+       <Routes>
 
 
           <Route path="/" element={<HomePage />} />
@@ -109,7 +118,7 @@ function App() {
 
 
         </Routes>
-
+       
       </Context.Provider>
 
     </div>
