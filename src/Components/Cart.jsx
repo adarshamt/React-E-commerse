@@ -4,6 +4,8 @@ import { FiPlus } from 'react-icons/fi';
 import { FiMinus } from 'react-icons/fi';
 import { TiDeleteOutline } from 'react-icons/ti';
 
+import Button from 'react-bootstrap/Button'  
+
 import empt from '../images/image_processing20201106-11709-18misc6.gif'
 
 
@@ -86,6 +88,8 @@ const removeQty = (id)=>{
              </div>
 
              <p> ₹ {item.qty*item.price}</p>
+
+             <Button variant="success">Buy now</Button>{' '}  
 
 
              <TiDeleteOutline style={{fontSize:'29px'}} id={item.id} onClick={removeitem} />

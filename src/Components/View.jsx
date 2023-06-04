@@ -6,6 +6,8 @@ import { Context } from './Context'
 
 import styled from "styled-components";
 
+
+
 const Main_Container = styled.div`
     height: 80vh;
     /* background-color: #dde7e7; */
@@ -125,9 +127,10 @@ const View = () => {
                             <h3>₹ {item.price}</h3>
 
                             <div>
-                                <button className="btns" onClick={MyCart}>
+                                {/* <button className="btns" onClick={MyCart}>
                                     Add To Cart
-                                </button>
+                                </button> */}
+                                  <Button variant="success">Add to cart</Button>{' '}  
                             </div>
                         </Right_Cont_1>
                     </Right_Cont>
