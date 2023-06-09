@@ -81,10 +81,11 @@ const Navbars= () => {
             <Nav.Link onClick={logCheck}><BsCartFill/></Nav.Link>
             <Nav.Link as={Link} to='/login' ><BsPersonCircle/></Nav.Link>
               
-            <Nav.Link as={Link} to='/admin' ><RiAdminFill/></Nav.Link>
             
-
           </Nav>
+
+          <Nav.Link style={{color:'white',marginLeft:'5%'}}  as={Link} to='/admin' ><RiAdminFill/></Nav.Link>
+
 
 
         </Navbar.Collapse>

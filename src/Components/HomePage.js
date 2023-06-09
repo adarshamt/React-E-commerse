@@ -179,7 +179,7 @@ const HomePage = () => {
           <div className='first_row'>
 
             {/* ***********products******************** */}
-        <><h3 style={{margin:'30px',textAlign:'center'}}>𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨</h3></>
+        <><h3 style={{margin:'30px',textAlign:'center',color:'#83a60f'}}>𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨</h3></>
         
         <CardGroup>
       <Card className='card_main' onClick={()=>link(`/men`)}>
