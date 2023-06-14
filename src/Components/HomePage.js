@@ -184,7 +184,7 @@ const HomePage = () => {
         <CardGroup>
       <Card className='card_main' onClick={()=>link(`/men`)}>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body className='card' >
+        <Card.Body className='card' id='card_img' >
           
           <img src={men1}/>
           <Card.Title>Men Running shoe</Card.Title>
@@ -199,7 +199,7 @@ const HomePage = () => {
       </Card>
       <Card className='card_main'>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body className='card' onClick={()=>link(`/women`)}>
+        <Card.Body className='card'  id='card_img' onClick={()=>link(`/women`)}>
           <img src={wmn1} />
           <Card.Title>Women’s Peach</Card.Title>
           <Card.Text>
@@ -212,7 +212,7 @@ const HomePage = () => {
       </Card>
       <Card className='card_main'>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body className='card'onClick={()=>link(`/women`)}>
+        <Card.Body className='card'  id='card_img' onClick={()=>link(`/women`)}>
           <img src={wmn3} />
           <Card.Title>Women’s Blue Training</Card.Title>
           <Card.Text>
@@ -231,7 +231,7 @@ const HomePage = () => {
     <CardGroup>
       <Card className='card_main' onClick={()=>link(`/men`)}>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body className='card'>
+        <Card.Body className='card'  id='card_img'>
           <img src={men3} />
           <Card.Title>Men’s Green Running</Card.Title>
           <Card.Text>
@@ -244,7 +244,7 @@ const HomePage = () => {
       </Card>
       <Card className='card_main'>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body  className='card'onClick={()=>link(`/women`)}>
+        <Card.Body  className='card'  id='card_img'onClick={()=>link(`/women`)}>
           <img src={wmn4} />
           <Card.Title>Women’s Candy City Run</Card.Title>
           <Card.Text>
@@ -257,7 +257,7 @@ const HomePage = () => {
       </Card>
       <Card className='card_main'>
         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-        <Card.Body className='card' onClick={()=>link(`/women`)}>
+        <Card.Body className='card'  id='card_img' onClick={()=>link(`/women`)}>
         <img src={wmn2} />
           <Card.Title>Women’s Tan Sneaker</Card.Title>
           <Card.Text>
