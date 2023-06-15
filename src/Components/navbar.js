@@ -78,8 +78,12 @@ const Navbars= () => {
           </Form>
 
           <Nav className='rigth_content_icons'>
+            <div style={{display:"flex",width:"100px",justifyContent:'space-around'}}>
+
             <Nav.Link onClick={logCheck}><BsCartFill/></Nav.Link>
             <Nav.Link as={Link} to='/login' ><BsPersonCircle/></Nav.Link>
+              
+            </div>
               
             
           </Nav>
