@@ -14,7 +14,6 @@ import Cart from './Components/Cart';
 
 
 
-
 import Navbars from './Components/navbar';
 import { useEffect, useState } from 'react';
 import { ProductsData } from './Components/Products/ProductData';
@@ -33,6 +32,10 @@ import AdminUserDetails from './Components/AdminUserDetails';
 import AdminEditProducts from './Components/AdminEditProducts';
 // import PreLoader from './Components/preLoader';
 
+// **************AXIOS CONNECTION*****************
+
+const axios = require("axios")
+
 
 
 
@@ -47,6 +50,8 @@ function App() {
   const [auth, setAuth] = useState(false)
 
   const [search, setSearch] = useState()
+
+  const [linkdata,setLinkData] = useState("")
 
   const data = {
     products,
@@ -65,6 +70,16 @@ function App() {
     setSearch
   }
 
+
+  const getData= async()=>{
+
+    const response= await axios.get( "http://localhost:3000/getData")
+    setLinkData(response.linkdata)
+  }
+
+ useEffect(()=>{
+  getData()
+ },[])
 
  
 
