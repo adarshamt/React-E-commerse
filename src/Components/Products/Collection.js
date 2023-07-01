@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react'
-import { Context } from '../Context';
+import React, { useContext, useEffect, useState } from 'react'
+// import { Context } from '../Context';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -9,23 +9,29 @@ import axios from 'axios';
 
     const Navigate = useNavigate()
     
-   const {products} = useContext(Context)
+  //  const {products} = useContext(Context)
 
+  const [products,setProducts] = useState([])
 
+  const datafetching= async()=>{
+    try {
+    const productRes= await  axios.get(`http://localhost:4001/users/products`)
+    // const setdata = productRes.data
+    // console.log("set data",setdata)
+         setProducts(productRes.data)            
+    } catch (error) {
+      console.log(error,'heloooo')
+      
+    }
+}
 
    useEffect(()=>{
-    const datafetching= async()=>{
-        try {
-          const response  =  await axios.get(`http://localhost:4001/admin/users`)
-          console.log(response.data.usersList)
-        } catch (error) {
-          console.log(error,'heloooo')
-          
-        }
-    }
+   
     datafetching()
 
    },[])
+
+   console.log(products)
 
 
   return (
