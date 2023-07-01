@@ -7,31 +7,43 @@ import { AiFillHome } from 'react-icons/ai'
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from './Context'
 
+import axios from 'axios'
+
 
 export const Login = () => {
 
   const ipref = useRef(null)
   const link = useNavigate()
 
-  const {signup,setAuth} =useContext(Context)
+  // const {signup,setAuth} =useContext(Context)
   
 
    const logvalidation = () =>{
-  const email = ipref.current.email.value
+  const username = ipref.current.username.value
   const password = ipref.current.password.value
 
-  const validation = signup.filter((item)=> item.email === email && item.password === password )
+  // const validation = signup.filter((item)=> item.email === email && item.password === password )
 
-  if (validation.length > 0){
-    alert('Login successfully')
-    setAuth(true)
-    link('/')
+  const passitms ={
 
-  }
-  else{
+    username : username,
+    password : password
+   }
+  
+  axios.post("http://localhost:4001/users/login",passitms)
+  .then(response=>console.log(response))
+  .catch(err=> console.log(err))
 
-    alert('Wrong user details')
-  }
+  // if (validation.length > 0){
+  //   alert('Login successfully')
+  //   setAuth(true)
+  //   link('/')
+
+  // }
+  // else{
+
+  //   alert('Wrong user details')
+  // }
 
 }
   
@@ -54,8 +66,8 @@ export const Login = () => {
         
 
 
-          <label>Email </label>
-          <input   type='email' placeholder='Email' name='email' />
+          <label>Username </label>
+          <input   type='text' placeholder='Username' name='username' />
 
              <label>Password </label>
             <input   type='text' placeholder='Password' name='password'/> 

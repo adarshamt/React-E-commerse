@@ -5,6 +5,8 @@ import './Signup.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from './Context'
 
+import axios from 'axios'
+
 
  const Signup = () => {
 
@@ -24,8 +26,21 @@ import { Context } from './Context'
 
     // console.log(signup)
   Navigate('/login')
+   const passitms ={
+
+    username : name,
+    password : password
+   }
+  
+  axios.post("http://localhost:4001/users/registrartion",passitms)
+  .then(response=>console.log(response))
+  .catch(err=> console.log(err))
+
 
   }
+
+  
+   
  return (
     <div className='main_div'>
 

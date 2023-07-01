@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Context } from '../Context';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 
   const Collection = () => {
@@ -9,6 +10,23 @@ import { useNavigate } from 'react-router-dom';
     const Navigate = useNavigate()
     
    const {products} = useContext(Context)
+
+
+
+   useEffect(()=>{
+    const datafetching= async()=>{
+        try {
+          const response  =  await axios.get(`http://localhost:4001/admin/users`)
+          console.log(response.data.usersList)
+        } catch (error) {
+          console.log(error,'heloooo')
+          
+        }
+    }
+    datafetching()
+
+   },[])
+
 
   return (
   

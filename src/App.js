@@ -34,7 +34,7 @@ import AdminEditProducts from './Components/AdminEditProducts';
 
 // **************AXIOS CONNECTION*****************
 
-const axios = require("axios")
+// const axios = require("axios")
 
 
 
@@ -71,15 +71,15 @@ function App() {
   }
 
 
-  const getData= async()=>{
+//   const getData= async()=>{
 
-    const response= await axios.get( "http://localhost:3000/getData")
-    setLinkData(response.linkdata)
-  }
+//     const response= await axios.get( "http://localhost:3000/getData")
+//     setLinkData(response.linkdata)
+//   }
 
- useEffect(()=>{
-  getData()
- },[])
+//  useEffect(()=>{
+//   getData()
+//  },[])
 
  
 
