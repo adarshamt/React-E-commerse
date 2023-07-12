@@ -82,9 +82,9 @@ const View = () => {
 
     
 
-    if(auth == true){
+    if(auth === true){
      
-           const cartproduct = cart.filter((item)=>item.id==id) 
+           const cartproduct = cart.filter((item)=>item.id===id) 
 
               if(cartproduct.length>0){
     
@@ -95,7 +95,7 @@ const View = () => {
              setCart(prevState => [...prevState, Newdata])
 
               alert("product added to cart")
-      // Navigate('./cart')
+      Navigate('./cart')
          }
 
     }
@@ -118,7 +118,7 @@ const View = () => {
                 <Cont_1 key={item.id}>
                     <Left_Cont>
                         <Left_Cont_1>
-                            <img style={{ height: "100%" }} src={item.img} />
+                            <img style={{ height: "100%" }} src={item.img} alt='no image found'/>
                         </Left_Cont_1>
                     </Left_Cont>
                     <Right_Cont>
@@ -130,7 +130,7 @@ const View = () => {
                                 {/* <button className="btns" onClick={MyCart}>
                                     Add To Cart
                                 </button> */}
-                                  <Button variant="success">Add to cart</Button>{' '}  
+                                  <Button variant="success" onClick={MyCart}>Add to cart</Button>{' '}  
                             </div>
                         </Right_Cont_1>
                     </Right_Cont>

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 // import { Context } from '../Context';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from 'axios'; 
 
 
   const Collection = () => {
@@ -17,7 +17,7 @@ import axios from 'axios';
     try {
     const productRes= await  axios.get(`http://localhost:4001/users/products`)
     // const setdata = productRes.data
-    // console.log("set data",setdata)
+    console.log("set data",productRes)
          setProducts(productRes.data)            
     } catch (error) {
       console.log(error,'heloooo')
@@ -45,7 +45,7 @@ import axios from 'axios';
     {products.map((item)=>(
 
 
-        <Card 
+        <Card key={item.id}
           className='shadow-lg p-3 mb-5 bg-body-tertiary rounded'
           style={{ width: '21.5rem' }}>
              <Card.Img  variant="top" src={item.img} />
