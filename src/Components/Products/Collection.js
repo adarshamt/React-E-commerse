@@ -17,7 +17,7 @@ import axios from 'axios';
     try {
     const productRes= await  axios.get(`http://localhost:4001/users/products`)
     // const setdata = productRes.data
-    // console.log("set data",setdata)
+    console.log("set data adarsh jhjhjh",setdata)
          setProducts(productRes.data)            
     } catch (error) {
       console.log(error,'heloooo')
