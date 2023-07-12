@@ -9,7 +9,7 @@ import axios from 'axios';
 
     const Navigate = useNavigate()
     
-    const {products} = useContext(Context)
+    // const {products} = useContext(Context)
 
   const [products,setProducts] = useState([])
 
