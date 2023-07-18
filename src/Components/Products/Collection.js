@@ -9,16 +9,26 @@ import axios from 'axios';
 
     const Navigate = useNavigate()
     
+<<<<<<< HEAD
   //  const {products} = useContext(Context)
+=======
+    // const {products} = useContext(Context)
+>>>>>>> 4379bfbba0ba967895a2760c65269641dfd4bf35
 
   const [products,setProducts] = useState([])
 
   const datafetching= async()=>{
     try {
+<<<<<<< HEAD
     const productRes = await  axios.get(`http://localhost:4001/users/products`)
 
     // const setdata = productRes.data
      console.log("set data",productRes)
+=======
+    const productRes= await  axios.get(`http://localhost:4001/users/products`)
+    // const setdata = productRes.data
+    console.log("set data adarsh jhjhjh",setdata)
+>>>>>>> 4379bfbba0ba967895a2760c65269641dfd4bf35
          setProducts(productRes.data)            
     } catch (error) {
       console.log(error,'heloooo')
