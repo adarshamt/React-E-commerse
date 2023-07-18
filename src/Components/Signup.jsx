@@ -1,9 +1,11 @@
 import React, { useContext, useRef } from 'react'
 
+
 import './Signup.css'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from './Context'
+
 
 import axios from 'axios'
 
@@ -15,7 +17,7 @@ import axios from 'axios'
   const inpref = useRef()
 
 
-  const signupHandler = () => {
+  const signupHandler =  () => {
 
     const name = inpref.current.name.value
     const email= inpref.current.email.value
@@ -27,17 +29,22 @@ import axios from 'axios'
     // console.log(signup)
   Navigate('/login')
    const passitms ={
-
     username : name,
     password : password
    }
+
+
   
-  axios.post("http://localhost:4001/users/registrartion",passitms)
-  .then(response=>console.log(response))
-  .catch(err=> console.log(err))
+    axios.post("http://localhost:4001/users/registrartion",passitms)
+  // .then(response=>console.log(response))
+  // .catch(err=> console.log(err))
 
+ 
 
-  }
+   }
+
+  
+  
 
   
    

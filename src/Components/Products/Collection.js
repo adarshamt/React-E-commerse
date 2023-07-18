@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 // import { Context } from '../Context';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios'; 
+import axios from 'axios';
 
 
   const Collection = () => {
@@ -15,9 +15,10 @@ import axios from 'axios';
 
   const datafetching= async()=>{
     try {
-    const productRes= await  axios.get(`http://localhost:4001/users/products`)
+    const productRes = await  axios.get(`http://localhost:4001/users/products`)
+
     // const setdata = productRes.data
-    console.log("set data",productRes)
+     console.log("set data",productRes)
          setProducts(productRes.data)            
     } catch (error) {
       console.log(error,'heloooo')

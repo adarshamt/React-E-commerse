@@ -70,7 +70,7 @@ const View = () => {
 
 
 
-  const data= ProductsData.filter((item)=>item.id==id)
+  const data = ProductsData.filter((item)=>item.id==id)
 
   const Navigate = useNavigate()
   

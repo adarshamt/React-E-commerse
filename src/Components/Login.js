@@ -18,7 +18,7 @@ export const Login = () => {
   // const {signup,setAuth} =useContext(Context)
   
 
-   const logvalidation = () =>{
+   const logvalidation =async() =>{
   const username = ipref.current.username.value
   const password = ipref.current.password.value
 
@@ -29,23 +29,35 @@ export const Login = () => {
     username : username,
     password : password
    }
+
+
+
+  try{
+
   
-  axios.post("http://localhost:4001/users/login",passitms)
-  .then(response=>console.log(response))
-  .catch(err=> console.log(err))
 
-  // if (validation.length > 0){
-  //   alert('Login successfully')
-  //   setAuth(true)
-  //   link('/')
+ const response=await axios.post(
+  "http://localhost:4001/users/login",passitms)
+  // .then(response=>console.log(response.data))
+  // .catch(err=> console.log(err))
+   const data= response.data.data;
 
-  // }
-  // else{
+   if(data){
+   localStorage.setItem("token", data.token);
 
-  //   alert('Wrong user details')
-  // }
+   console.log("data", data.token)
+   if(!data){
 
+    alert("wrong credentials")
+   }
+
+   }
 }
+
+catch (err){
+ console.log("error",err)
+}
+   }
   
   return (
     <div className='main_div'>
