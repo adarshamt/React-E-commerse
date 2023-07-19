@@ -44,8 +44,9 @@ export const Login = () => {
 
    if(data){
    localStorage.setItem("token", data.token);
+   window.alert("login successfully")
 
-   console.log("data", data.token)
+   console.log("data", data.token) 
    if(!data){
 
     alert("wrong credentials")

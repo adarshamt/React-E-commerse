@@ -95,7 +95,7 @@ function App() {
 
       
 
-    :
+    
        <Routes>
 
 
@@ -132,7 +132,7 @@ function App() {
           {/* <Route path='/adminProducts' element={ <AdminProducts/> } /> */}
 
 
-        </Routes>
+        </Routes> 
        
       </Context.Provider>
 
