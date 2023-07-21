@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ProductsData } from './Products/ProductData'
+// import { ProductsData } from './Products/ProductData'
 import { Button, Card } from 'react-bootstrap'
 import { Context } from './Context'
 
@@ -69,8 +69,12 @@ const View = () => {
   // console.log(type,img,title,price,qty,"destructured");
 
 
+  const {products} = useContext(Context)
 
-  const data = ProductsData.filter((item)=>item.id==id)
+  console.log("app products",products)
+  
+  const data = products.filter((item)=>item.id==id)
+  console.log("filttered data",data)
 
   const Navigate = useNavigate()
   
@@ -118,7 +122,7 @@ const View = () => {
                 <Cont_1 key={item.id}>
                     <Left_Cont>
                         <Left_Cont_1>
-                            <img style={{ height: "100%" }} src={item.img} alt='no image found'/>
+                            <img style={{ height: "100%" }} src={item.img} alt='not found'/>
                         </Left_Cont_1>
                     </Left_Cont>
                     <Right_Cont>

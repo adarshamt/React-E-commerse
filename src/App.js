@@ -16,7 +16,7 @@ import Cart from './Components/Cart';
 
 import Navbars from './Components/navbar';
 import { useEffect, useState } from 'react';
-import { ProductsData } from './Components/Products/ProductData';
+// import { ProductsData } from './Components/Products/ProductData';
 import Collection from './Components/Products/Collection';
 
 import { Context } from './Components/Context';
@@ -30,18 +30,38 @@ import AdminProducts from './Components/AdminProducts';
 import Search from './Components/Search';
 import AdminUserDetails from './Components/AdminUserDetails';
 import AdminEditProducts from './Components/AdminEditProducts';
+import axios from 'axios';
 // import PreLoader from './Components/preLoader';
 
 // **************AXIOS CONNECTION*****************
 
-// const axios = require("axios")
+
 
 
 
 
 function App() {
+  const [products, setProducts] = useState([])
 
-  const [products, setProducts] = useState(ProductsData)
+  useEffect(()=>{
+   
+    datafetching()
+
+   },[])
+ 
+  const datafetching= async()=>{
+    try {
+    const productRes = await  axios.get(`http://localhost:4001/users/products`)
+
+    // const setdata = productRes.data
+     console.log("set data",productRes)
+         setProducts(productRes.data)            
+    } catch (error) {
+      console.log(error,'heloooo')
+      
+    }
+}
+
 
   const [cart, setCart] = useState([])
 

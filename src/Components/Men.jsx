@@ -1,15 +1,18 @@
-import React from 'react'
-import { ProductsData } from './Products/ProductData';
+import React, { useContext } from 'react'
+// import { ProductsData } from './Products/ProductData';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Context } from './Context';
 
 
 
 const Men = () => {
 
   const Navigate = useNavigate()
+  const {products} = useContext(Context)
 
-  const data = ProductsData.filter((item)=>item.type ==='Men shoes')
+
+  const data = products.filter((item)=>item.type ==='Men shoes')
 
 
   return (
