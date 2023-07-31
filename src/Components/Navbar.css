@@ -5,15 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
     color:#e4e6e7;
 
-    height: 20px;
+    height: 30px;
     background-color: #abb8c3;
 }
 .nav_main_cont{
-    height: 50px;
-    background-color: white;
+    height: 60px;
+    
 }
 .Company_name{
     width: 100px;
@@ -74,4 +74,7 @@
 
 .contents{
     height: 50px;
+    
+
+    margin: 0;
 }

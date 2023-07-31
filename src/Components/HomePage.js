@@ -95,7 +95,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src='https://cdn.shopify.com/s/files/1/0567/9503/7849/files/website-banner-desktop-landscape.jpg?v=1635135138'          
+          src='https://mir-s3-cdn-cf.behance.net/project_modules/fs/2bbcfa99737217.5ef9be3dbb9a9.jpg'          
           alt="No image found"
         />
 
@@ -107,7 +107,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 "
-          src='https://cdn.shopify.com/s/files/1/0567/9503/7849/files/website-banner-desktop-landscape.jpg?v=1635135138' 
+          src='https://apparelglobal.com/en/wp-content/uploads/2022/09/footwear-banner.jpg' 
           alt="No image found"
         />
 

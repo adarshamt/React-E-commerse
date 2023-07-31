@@ -56,7 +56,7 @@ const Navbars= () => {
       <Container  className='contents'>
         <Navbar.Brand className='Company_name' href="#home"><img onClick={()=>link(`/`)}   src={log1} /> </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}>
             <Nav.Link as={Link} to='/men' >MEN</Nav.Link>
