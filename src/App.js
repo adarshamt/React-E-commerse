@@ -15,6 +15,8 @@ import Cart from './Components/Cart';
 
 
 import Navbars from './Components/navbar';
+import Footer from './Components/footer';
+
 import { useEffect, useState } from 'react';
 // import { ProductsData } from './Components/Products/ProductData';
 import Collection from './Components/Products/Collection';
@@ -153,6 +155,7 @@ function App() {
 
 
         </Routes> 
+        <Footer/>
        
       </Context.Provider>
 
