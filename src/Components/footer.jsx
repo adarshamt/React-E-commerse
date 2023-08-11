@@ -2,8 +2,6 @@ import React from 'react';
 import {
   MDBFooter,
   MDBContainer,
-  MDBCol,
-  MDBRow,
   MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
@@ -60,7 +58,7 @@ export default function App() {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2023 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
+        <a className='text-white' href='https://batafootware.netlify.app/'>
           batafootware.com
         </a>
       </div>
