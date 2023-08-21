@@ -24,18 +24,18 @@ const Navbars= () => {
 
     const logCheck= ()=>{
       
-      link('/cart')
+      // link('/cart')
 
       
-      // if(auth == true){
+      if(auth == true){
       
 
-      //   link('/cart')
-      // }else{
+        link('/cart')
+      }else{
 
-      //   alert(' Please Login')
-      //   link('/login')
-      // }
+        alert(' Please Login')
+        link('/login')
+      }
     }
 
     
